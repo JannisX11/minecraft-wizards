@@ -1,0 +1,26 @@
+name: Suggestion
+description: Use this form to suggest features or improvements for the Minecraft Wizards
+title: "Suggestion Summary"
+body:
+- type: markdown
+  attributes:
+    value: |
+      **Before submitting a suggestion, please check if it has already been suggested.**
+      Please only include one suggestion per issue, as issues are used to track the status of a suggestion.
+- type: dropdown
+  id: plugin
+  attributes:
+    label: Plugin
+    multiple: true
+    options:
+      - Entity Wizard
+      - Block Wizard
+      - Item Wizard
+  validations:
+    required: true
+- type: textarea
+  id: details
+  attributes:
+    label: Detailed description of your suggestion
+  validations:
+    required: true
